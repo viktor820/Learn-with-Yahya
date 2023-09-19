@@ -1,0 +1,89 @@
+:root{
+    --background-image: url(imag/1f0bfc20c382a56fd0146e47f982b5a0.jpg);
+}
+.first{
+    display: flex;
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+html{
+    scroll-behavior: smooth;
+}
+.first h1{
+color: #c20303;   
+}
+.first p{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.lear{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+}
+.lear h1{
+font-size: 3em;
+color: #c20303;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conct h1{
+    font-size: 30px;
+    color: #c20303;
+    
+}
+.conct img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+.conct img:hover{
+    cursor: pointer;
+
+}
+.dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+.dd p{
+    text-align: center;
+}
+@keyframes transit {
+    from{
+opacity: 0;
+transform: translateY(-10px);
+    }
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body{
+    animation: transit 0.7s;
+}
